@@ -28,24 +28,24 @@ A modern, student-facing interactive web application developed for the **Advance
 
 ## 🚀 Getting Started Locally
 
-# Prerequisites
+### Prerequisites
 * Make sure you have Node.js (v18.0.0 or higher) and npm installed on your system.
 
-# Installation
+### Installation
 * Clone the repository:
 * git clone [https://github.com/your-username/advanced-ai-lab.git](https://github.com/your-username/advanced-ai-lab.git)
 * cd advanced-ai-lab
 
-# Install dependencies:
+### Install dependencies:
 * npm install
 
-# Start the local development server:
+### Start the local development server:
 * npm run dev
 * Open http://localhost:5173 in your browser to view the application.
 
 ## 📦 Production Build
 
-# To build the static production assets:
+### To build the static production assets:
 * npm run build
 
 # To preview the production build locally:
@@ -63,7 +63,7 @@ A modern, student-facing interactive web application developed for the **Advance
 ## 👤 Author & Course Instructor
 Soumita Basu
 
-# Lecturer & Course Coordinator — Advanced AI Laboratory
+## Lecturer & Course Coordinator — Advanced AI Laboratory
 Contact: soumitabasu02@gmail.com
 
 ## 📜 License
