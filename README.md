@@ -1,4 +1,4 @@
-#Advanced AI Laboratory — Coursework Platform
+## Advanced AI Laboratory — Coursework Platform
 
 A modern, student-facing interactive web application developed for the **Advanced AI Laboratory** coursework led by **Soumita Basu**. The platform hosts modular lecture materials spanning foundational Machine Learning, classical regression, loss optimization, and modern agentic architectures, complete with interactive UI components and SVG dataflow diagrams.
 
@@ -26,45 +26,45 @@ A modern, student-facing interactive web application developed for the **Advance
 
 ---
 
-🚀 Getting Started Locally
-Prerequisites
-Make sure you have Node.js (v18.0.0 or higher) and npm installed on your system.
+## 🚀 Getting Started Locally
 
-Installation
-Clone the repository:
+# Prerequisites
+* Make sure you have Node.js (v18.0.0 or higher) and npm installed on your system.
 
-Bash
-git clone [https://github.com/your-username/advanced-ai-lab.git](https://github.com/your-username/advanced-ai-lab.git)
-cd advanced-ai-lab
+# Installation
+* Clone the repository:
+* git clone [https://github.com/your-username/advanced-ai-lab.git](https://github.com/your-username/advanced-ai-lab.git)
+* cd advanced-ai-lab
 
-Install dependencies:
-npm install
+# Install dependencies:
+* npm install
 
-Start the local development server:
-npm run dev
+# Start the local development server:
+* npm run dev
+* Open http://localhost:5173 in your browser to view the application.
 
-Open http://localhost:5173 in your browser to view the application.
+## 📦 Production Build
 
-📦 Production Build
-To build the static production assets:
-npm run build
+# To build the static production assets:
+* npm run build
 
-To preview the production build locally:
-npm run preview
+# To preview the production build locally:
+* npm run preview
 
-🌐 Deploying to Vercel
-This repository is optimized for one-click deployment on Vercel:
-Push your code to your GitHub / GitLab repository.
-Log into your Vercel Dashboard and click "Add New Project".
-Import your advanced-ai-lab repository.
-Framework Preset will be automatically detected as Vite.
-Click Deploy.
+## 🌐 Deploying to Vercel
 
-👤 Author & Course Instructor
+* This repository is optimized for one-click deployment on Vercel:
+* Push your code to your GitHub / GitLab repository.
+* Log into your Vercel Dashboard and click "Add New Project".
+* Import your advanced-ai-lab repository.
+* Framework Preset will be automatically detected as Vite.
+* Click Deploy.
+
+## 👤 Author & Course Instructor
 Soumita Basu
 
-Lecturer & Course Coordinator — Advanced AI Laboratory
+# Lecturer & Course Coordinator — Advanced AI Laboratory
 Contact: soumitabasu02@gmail.com
 
-📜 License
+## 📜 License
 This project is created for academic and educational coursework purposes under the Advanced AI Laboratory curriculum.
