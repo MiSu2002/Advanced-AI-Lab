@@ -188,6 +188,51 @@ export default function Lecture1_0() {
   </svg>
 </div>
 
+<div className="col-12 mb-5">
+            <div className="card border-0 shadow-sm p-4 bg-white">
+              <h5 className="fw-bold text-dark border-bottom pb-2 mb-3">Supervised vs. Unsupervised Learning</h5>
+              <div className="row g-3">
+                <div className="col-md-6">
+                  <div className="p-3 border rounded bg-light h-100">
+                    <h6 className="fw-bold text-primary">Supervised Learning</h6>
+                    <p className="small text-secondary mb-2">
+                      <strong>Input Data:</strong> Features (<em>X</em>) + Target Labels (<em>y</em>).
+                    </p>
+                    <p className="small text-secondary mb-0">
+                      <strong>Objective:</strong> Learn a mapping function <em>f(X) &rarr; y</em> to predict targets on unseen data. The model receives constant ground-truth feedback during training via a loss function.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="p-3 border rounded bg-light h-100">
+                    <h6 className="fw-bold text-primary">Unsupervised Learning</h6>
+                    <p className="small text-secondary mb-2">
+                      <strong>Input Data:</strong> Features (<em>X</em>) only (No target labels).
+                    </p>
+                    <p className="small text-secondary mb-0">
+                      <strong>Objective:</strong> Discover underlying patterns, groupings, or lower-dimensional structures within data without explicit target feedback (e.g., K-Means, PCA).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-3 p-3 bg-primary bg-opacity-10 border border-primary rounded">
+                <h6 className="fw-bold text-dark mb-1">Why is Regression Supervised Learning?</h6>
+                <ul className="small text-secondary mb-0 ps-3">
+                  <li>
+                    <strong>Ground-Truth Targets (<em>y</em>):</strong> Regression relies on paired dataset targets (e.g., house prices, test scores).
+                  </li>
+                  <li>
+                    <strong>Explicit Error Calculation:</strong> Model outputs <em>y&#770;</em> are directly subtracted from true target values <em>y</em> to compute residual error: <em>Error = y&#770; - y</em>.
+                  </li>
+                  <li>
+                    <strong>Supervised Updates:</strong> Optimization algorithms (like Gradient Descent) require this explicit target difference to calculate parameter gradients and update weights.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
                 <div className="card border-0 shadow-sm bg-info bg-opacity-10 border-start border-info border-4 rounded-3 p-4 mt-4">
   <div className="d-flex align-items-center gap-2 mb-3">
     <h6 className="fw-bold text-dark mb-0 fs-6">Key Takeaways for Students</h6>
@@ -219,7 +264,7 @@ export default function Lecture1_0() {
                 <Link to="/" className="btn btn-outline-secondary">
                   &larr; Back to Curriculum
                 </Link>
-                <Link to="/lectures/lecture-1-1" className="btn btn-primary">
+                <Link to="/lecture-1-1" className="btn btn-primary">
                   Next: Lecture 1.1 Linear Regression &rarr;
                 </Link>
               </div>

@@ -4,31 +4,56 @@ import Navbar from './Navbar';
 
 export default function HomePage() {
   const lectures = [
-    {
-      id: '1.0',
-      title: 'Lecture 1.0: What is ML? How it\'s different from traditional programming?',
-      description: 'An overview of Machine Learning paradigms, comparing explicit rule-based algorithms with data-driven predictive modeling.',
-      path: '/lecture-1-0',
-      tag: 'Overview',
-      badgeBg: 'bg-info text-dark'
-    },
-    {
-      id: '1.1',
-      title: 'Lecture 1.1: Linear Regression',
-      description: 'Foundations of continuous variable prediction, gradient descent optimization, loss functions, and cost evaluation.',
-      path: '/lecture-1-1',
-      tag: 'Supervised ML',
-      badgeBg: 'bg-primary'
-    },
-    {
-      id: '1.2',
-      title: 'Lecture 1.2: Logistic Regression',
-      description: 'Binary classification mechanics, sigmoid activation functions, decision boundaries, and cross-entropy loss.',
-      path: '/lecture-1-2',
-      tag: 'Supervised ML',
-      badgeBg: 'bg-primary'
-    }
-  ];
+  {
+    id: '1.0',
+    title: 'Lecture 1.0: What is ML? How it\'s different from traditional programming?',
+    description: 'An overview of Machine Learning paradigms, comparing explicit rule-based algorithms with data-driven predictive modeling and case studies.',
+    path: '/lecture-1-0',
+    tag: 'Overview',
+    type: 'lecture',
+    badgeBg: 'bg-info text-dark'
+  },
+  {
+    id: '1.1',
+    module: 'Module 1.1',
+    title: 'Lecture 1.1: Linear Regression',
+    description: 'Foundations of continuous numerical scalar prediction, hypothesis formulation, feature weights, and parameter fitting.',
+    path: '/lecture-1-1',
+    tag: 'Supervised ML',
+    type: 'lecture',
+    badgeBg: 'bg-primary'
+  },
+  {
+    id: '1.2',
+    module: 'Module 1.2',
+    title: 'Lecture 1.2: Logistic Regression',
+    description: 'Binary classification mechanics, sigmoid activation mapping, log-odds, decision boundaries, and probabilistic prediction.',
+    path: '/lecture-1-2',
+    tag: 'Supervised ML',
+    type: 'lecture',
+    badgeBg: 'bg-primary'
+  },
+  {
+    id: '1.3',
+    module: 'Module 1.3',
+    title: 'Lecture 1.3: Loss Functions & Optimization',
+    description: 'Mathematical mechanics of Mean Squared Error (MSE), Binary Cross-Entropy Loss, cost surfaces, and Gradient Descent convergence.',
+    path: '/lecture-1-3',
+    tag: 'Optimization',
+    type: 'lecture',
+    badgeBg: 'bg-primary'
+  },
+  {
+    id: '1.4',
+    module: 'Lab 1',
+    title: 'Lab 1: Supervised Learning — Inference, Loss & Optimization',
+    description: 'Practical code implementations of Linear Regression and Logistic Regression using Python, including model training, evaluation metrics, and visualization.',
+    path: '/lab-1',
+    tag: 'Lab / Hands-On',
+    type: 'lab',
+    badgeBg: 'bg-warning text-dark'
+  }
+];
 
   return (
     <div className="bg-light min-vh-100">
@@ -62,7 +87,7 @@ export default function HomePage() {
                             {lecture.tag}
                           </span>
                           <span className="text-muted small fw-semibold">
-                            Module 1.{lecture.id.split('.')[1]}
+                            {lecture.module}
                           </span>
                         </div>
                         <h5 className="mb-2 fw-bold text-dark">
@@ -76,7 +101,7 @@ export default function HomePage() {
                         to={lecture.path}
                         className="btn btn-outline-primary rounded-pill px-4 py-2 text-nowrap align-self-start align-self-md-center"
                       >
-                        Access Lecture &rarr;
+                        Access {lecture.type} &rarr;
                       </Link>
                     </div>
                   </div>
