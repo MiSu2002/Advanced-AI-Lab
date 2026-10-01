@@ -54,12 +54,13 @@ export default function AboutAuthor() {
               <img
                 src="/profile-pic.jpg" 
                 alt="Soumita Basu"
-                className="rounded-circle img-thumbnail shadow-lg border-3 border-info"
+                className="rounded-circle img-thumbnail shadow-lg border-3 "
                 style={{
                   width: "250px",
                   height: "250px",
                   objectFit: "cover",
-                  backgroundColor: "#212529"
+                  backgroundColor: "#212529",
+                  borderColor: "#FFC670"
                 }}
                 onError={(e) => {
                   // Fallback avatar if image path is not yet loaded
@@ -73,8 +74,8 @@ export default function AboutAuthor() {
           {/* Author Details */}
           <div className="col-lg-9 col-md-8">
             <div className="d-flex align-items-center gap-2 mb-2 flex-wrap">
-              <span className="badge bg-outline-info border border-info text-info px-3 py-2">Advanced AI Teaching Assistant</span>
-              <span className="badge bg-outline-info border border-info text-info px-3 py-2">Enterprise AI Researcher</span>
+              <span className="badge px-3 py-2" style={{color:"#FFC670", border: "1px solid #FFC670"}}>Advanced AI Teaching Assistant</span>
+              <span className="badge px-3 py-2" style={{color:"#FFC670", border: "1px solid #FFC670"}}>Enterprise AI Researcher</span>
             </div>
             <h1 className="fw-bold display-5 mb-2">Soumita Basu</h1>
             <p className="lead text-white-50 mb-3">
@@ -85,7 +86,8 @@ export default function AboutAuthor() {
                 href="https://agentforce-architecture.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-info font-monospace btn-sm rounded-pill px-4 fw-bold text-dark"
+                className="btn font-monospace btn-sm rounded-pill px-4 fw-bold text-dark"
+                style={{backgroundColor: "#FFC670"}}
               >
                 Thesis: agentforce-architecture.vercel.app
               </a>
@@ -102,8 +104,8 @@ export default function AboutAuthor() {
       <div className="row g-4 mb-5">
         {highlights.map((item, idx) => (
           <div className="col-md-4" key={idx}>
-            <div className="card border-0 shadow-sm rounded-4 p-4 h-100 border-4 border-start border-info">
-              <span className="text-info font-monospace small fw-bold uppercase">{item.subtitle}</span>
+            <div className="card border-0 shadow-sm rounded-4 p-4 h-100 border-4 border-start border-warning">
+              <span className="font-monospace small fw-bold uppercase" style={{color: "#FFC670"}}>{item.subtitle}</span>
               <h5 className="fw-bold text-dark mt-1 mb-2">{item.title}</h5>
               <p className="small text-muted mb-0" style={{ lineHeight: "1.6" }}>
                 {item.description}
@@ -117,19 +119,19 @@ export default function AboutAuthor() {
       <div className="row g-4 mb-5">
         <div className="col-lg-8">
           <div className="card border-0 shadow-sm rounded-4 p-4 p-md-5">
-            <h4 className="fw-bold text-dark border-bottom pb-3 mb-4">Author Journey</h4>
+            <h4 className="fw-bold text-warning border-bottom pb-3 mb-4">Author Journey</h4>
             
-            <h6 className="fw-bold text-info">Industry Foundations at Accenture</h6>
+            <h6 className="fw-bold text-dark">Industry Foundations at Accenture</h6>
             <p className="text-black small mb-4" style={{ lineHeight: "1.8" }}>
               During my 22 months as a software developer at Accenture, I built Salesforce solutions and Agentforce features for a UK-based water utilities client. Working within an Agile SDLC process allowed me to design Agentforce architectures for user stories and construct autonomous agent workflows.
             </p>
 
-            <h6 className="fw-bold text-info">Shift from Development to Architecture Research</h6>
+            <h6 className="fw-bold text-dark">Shift from Development to Architecture Research</h6>
             <p className="text-black small mb-4" style={{ lineHeight: "1.8" }}>
               Through hands-on development, I realized my true passion lay in asking <em>why</em> and <em>how</em> things work under the hood rather than simply using existing tools. I wanted to deeply understand how artificial intelligence achieves true autonomy. This drive led me to author an independent thesis on <strong>Enterprise AI Architecture — Agentforce Architecture</strong>, dissecting the Atlas Reasoning Engine, ReAct (Reasoning &amp; Acting) dynamic loops, OODA (Observe-Orient-Decide-Act) frameworks, and LLM grounding techniques.
             </p>
 
-            <h6 className="fw-bold text-info">Academic Leadership &amp; Pedagogy</h6>
+            <h6 className="fw-bold text-dark">Academic Leadership &amp; Pedagogy</h6>
             <p className="text-black small mb-0" style={{ lineHeight: "1.8" }}>
               Recognizing my passion for foundational AI, my college Principal appointed me as an <strong>Advanced AI Teaching Assistant</strong> to lead a 6-month course for second-year students. Grounding the lab curriculum in Russell &amp; Norvig's <em>Artificial Intelligence: A Modern Approach</em>, I teach state-space search, knowledge representation, finite state controllers, and vectorized machine learning. Over the next six months, I am expanding my academic outreach as a guest lecturer across regional engineering institutions while preparing for my M.Sc. in Computer Science at recognised universities in Italy.
             </p>
@@ -139,24 +141,24 @@ export default function AboutAuthor() {
         {/* Sidebar Cards */}
         <div className="col-lg-4">
           {/* Research & Thesis Focus Card */}
-          <div className="card border-0 text-white rounded-4 p-4 shadow-sm mb-4 border-2 border-top border-bottom border-info">
+          <div className="card border-0 text-white rounded-4 p-4 shadow-sm mb-4 border-2 border-top border-bottom border-warning">
             <h5 className="fw-bold text-dark border-bottom border-secondary pb-2 mb-3">Independent Thesis Focus</h5>
             <p className="small text-black-50 mb-3" style={{ lineHeight: "1.6" }}>
               How autonomous agents fundamentally differ from traditional chatbots through grounded reasoning, dynamic planning, and enterprise integrations.
             </p>
             <ul className="list-unstyled small text-black mb-0">
-              <li className="mb-2"><strong className="text-info">Engine:</strong> Salesforce Atlas Reasoning Engine</li>
-              <li className="mb-2"><strong className="text-info">Frameworks:</strong> ReAct &amp; OODA Decision Loops</li>
-              <li className="mb-2"><strong className="text-info">Grounding:</strong> LLM Retrieval &amp; Enterprise Guardrails</li>
+              <li className="mb-2"><strong className="text-warning">Engine:</strong> Salesforce Atlas Reasoning Engine</li>
+              <li className="mb-2"><strong className="text-warning">Frameworks:</strong> ReAct &amp; OODA Decision Loops</li>
+              <li className="mb-2"><strong className="text-warning">Grounding:</strong> LLM Retrieval &amp; Enterprise Guardrails</li>
             </ul>
           </div>
 
           {/* Core Technical Competencies */}
-          <div className="card mt-lg-5 border-0 shadow-sm rounded-4 p-4 bg-white border-2 border-top border-bottom border-info">
+          <div className="card mt-lg-5 border-0 shadow-sm rounded-4 p-4 bg-white border-2 border-top border-bottom border-warning">
             <h5 className="fw-bold text-dark border-bottom pb-2 mb-3">Core Competencies</h5>
             <div className="d-flex flex-wrap gap-2">
               {skills.map((skill, idx) => (
-                <span key={idx} className="badge bg-light text-dark border p-2 small font-monospace fw-normal">
+                <span key={idx} className="badge text-dark border p-2 small font-monospace fw-normal" style={{backgroundColor: "#FFF3E0"}}>
                   {skill}
                 </span>
               ))}
