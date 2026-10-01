@@ -75,7 +75,7 @@ export default function HomePage() {
                 <h4 className="mb-0 fw-bold text-primary">
                   Module 1: Foundations of Machine Learning
                 </h4>
-                <span className="badge bg-secondary">3 Lectures</span>
+                <span className="badge bg-secondary">4 Lectures / 1 Lab</span>
               </div>
               <div className="list-group list-group-flush">
                 {lectures.map((lecture) => (
