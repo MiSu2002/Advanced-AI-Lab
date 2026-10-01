@@ -170,6 +170,9 @@ export default function Lecture1_3() {
           </div>
         </div>
       </main>
+      <footer className="mt-5 text-center text-muted small">
+          <p>© {new Date().getFullYear()} Advanced AI Lab by Soumita Basu. Optimized for concurrent laboratory access.</p>
+        </footer>
     </div>
   );
 }

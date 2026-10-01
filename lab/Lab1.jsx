@@ -18,7 +18,6 @@ export default function Lab1() {
         </ol>
       </nav>
 
-      {/* Header Banner */}
       <div className="card border-0 bg-dark text-white p-4 p-md-5 rounded-4 shadow-sm mb-4">
         <div className="d-flex align-items-center gap-2 mb-2">
           <span className="badge bg-success px-3 py-2">Lab 1 / Complete Masterclass</span>
@@ -30,7 +29,6 @@ export default function Lab1() {
         </p>
       </div>
 
-      {/* Tab Selectors */}
       <div className="d-flex gap-2 mb-4 border-bottom pb-2 flex-wrap">
         <button
           className={`btn ${activeTab === "sklearn" ? "btn-primary" : "btn-outline-secondary"} fw-bold rounded-pill px-3 py-2 small`}
@@ -64,7 +62,6 @@ export default function Lab1() {
         </button>
       </div>
 
-      {/* TAB 0: SCIKIT-LEARN IMPLEMENTATION */}
       {activeTab === "sklearn" && (
         <div className="row g-4">
           <div className="col-12">
@@ -76,7 +73,6 @@ export default function Lab1() {
             </div>
           </div>
 
-          {/* Python Code Block */}
           <div className="col-lg-7">
             <div className="card border-0 shadow-sm bg-dark text-light rounded-3 overflow-hidden">
               <div className="card-header bg-secondary bg-opacity-20 border-secondary d-flex justify-content-between align-items-center px-3 py-2">
@@ -142,7 +138,6 @@ Classes:     [0 1 0]`}
         </div>
       )}
 
-      {/* TAB 1: NUMPY LINEAR FORWARD PASS */}
       {activeTab === "linear" && (
         <div className="row g-4">
           <div className="col-lg-7">
@@ -199,7 +194,6 @@ Classes:     [0 1 0]`}
         </div>
       )}
 
-      {/* TAB 2: NUMPY LOGISTIC SIGMOID PASS */}
       {activeTab === "logistic" && (
         <div className="row g-4">
           <div className="col-lg-7">
@@ -259,7 +253,6 @@ Classes:       [0, 1, 0]`}
         </div>
       )}
 
-      {/* TAB 3: LAB 1.4 COST & LOSS EVALUATION */}
       {activeTab === "cost" && (
         <div className="row g-4">
           <div className="col-12">
@@ -330,7 +323,6 @@ Classes:       [0, 1, 0]`}
         </div>
       )}
 
-      {/* TAB 4: LAB 1.5 GRADIENT DESCENT OPTIMIZATION */}
       {activeTab === "optimization" && (
         <div className="row g-4">
           <div className="col-12">
@@ -402,6 +394,9 @@ Optimized b: 40.0000`}
         </div>
       )}
     </div>
+    <footer className="mt-5 text-center text-muted small">
+          <p>© {new Date().getFullYear()} Advanced AI Lab by Soumita Basu. Optimized for concurrent laboratory access.</p>
+        </footer>
     </div>
   );
 }
