@@ -33,7 +33,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/about-author"
+                to="/about-author/"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active fw-bold text-info" : "text-light"}`
                 }
@@ -43,7 +43,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/prescribed-books"
+                to="/prescribed-books/"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active fw-bold text-info" : "text-light"}`
                 }

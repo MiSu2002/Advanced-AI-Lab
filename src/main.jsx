@@ -12,12 +12,14 @@ import Lecture1_2 from './lectures/Lecture1-2.jsx';
 import Lecture1_3 from './lectures/Lecture1-3.jsx';
 import Lab1 from '../lab/Lab1.jsx';
 import PrescribedBooks from './Prescribed-books.jsx';
+import AboutAuthor from './About-author.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
       <Routes>
         <Route path="/" element={<Homepage/>} />
+        <Route path="/about-author/" element={<AboutAuthor/>} />
         <Route path="/prescribed-books/" element={<PrescribedBooks/>} />
         <Route path="/lecture-1-0/" element={<Lecture1_0 />} />
         <Route path="/lecture-1-1/" element={<Lecture1_1 />} />
